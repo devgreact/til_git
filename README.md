@@ -116,3 +116,18 @@ git commit -m "깃허브 사용법 정리중"
 ```bash
 git commit
 ```
+
+- 실제 내용 수정 진행
+
+```bash
+git commit --amend 엔터
+
+수정 및 저장
+
+```
+
+- 마무리해서 main 으로 이동하기
+
+```bash
+git rebase --continue
+```

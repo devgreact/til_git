@@ -277,3 +277,23 @@ git rebase -i 해시값^  엔터
 ```bash
 git rebase -i bd3256d^
 ```
+
+예제)
+
+```bash
+pick bd3256d [커밋타입] 커밋 타이틀
+pick 189efb5 [docs] 깃허브 명령어를 공부하고 있음.
+pick b69b523 [docs] 깃허브 기본 사용 및 연결법
+pick d1c3309 [docs] 브랜치의 이해
+pick 8459f84 진행중
+```
+- 위 처럼 나온 곳에서 `pick b69b523` 을 `eidt b69b523` 으로 수정
+- `pick` 을 `edit` 으로 수정 후 저장
+예제)
+```bash
+pick bd3256d [커밋타입] 커밋 타이틀
+pick 189efb5 [docs] 깃허브 명령어를 공부하고 있음.
+pick b69b523 [docs] 깃허브 기본 사용 및 연결법
+edit d1c3309 [docs] 브랜치의 이해 
+pick 8459f84 진행중
+```

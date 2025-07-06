@@ -398,6 +398,18 @@ git clone -b 브랜치명 --single-branch https주소  .
 git clone -b jeju --single-branch https~  .
 ```
 
+- 모든 깃허브 브랜치 내려받기
+
+```bash
+git clone 깃허브주소 .   엔터
+
+for branch in $(git branch -r | grep -v '\->'); do
+  git branch --track "${branch#origin/}" "$branch"
+done
+git fetch --all
+git pull --all
+```
+
 ## 5. 깃허브 협업 과정
 
 - 팀장(깃허브 관리자)과 팀원(fork 진행)으로 구성권장
